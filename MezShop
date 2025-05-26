@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Продажа крипто-монет</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .coin {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  .coin:hover {
+    transform: scale(1.02);
+  }
+  .coin h2 {
+    margin-top: 0;
+  }
+  .price {
+    font-size: 1.2em;
+    color: #007bff;
+    margin: 10px 0;
+  }
+  button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+  }
+  button:hover {
+    background-color: #218838;
+  }
+  footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  @media(max-width: 992px) {
+    .coin {
+      flex: 1 1 calc(50% - 40px);
+    }
+  }
+  @media(max-width: 600px) {
+    .coin {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Магазин крипто-монет</h1>
+  <p>Лучшие монеты для инвестиций и коллекции</p>
+</header>
+
+<div class="container">
+  <!-- Монета 1 -->
+  <div class="coin">
+    <h2>MezCoin</h2>
+    <div class="price">Цена: 0.2 руб</div>
+    <button onclick="window.location.href='https://t.me/ChromeDomeSecond'">Купить</button>
+  </div>
+  <!-- Монета 2 -->
+  <div class="coin">
+    <h2>MegiCoin</h2>
+    <div class="price">Цена: нет в наличии</div>
+    <button onclick="window.location.href='https://t.me/ChromeDomeSecond'">Купить</button>
+  </div>
+  <!-- Монета 3 -->
+  <div class="coin">
+    <h2>GPTCoin</h2>
+    <div class="price">Цена: нет в наличии</div>
+    <button onclick="window.location.href='https://t.me/ChromeDomeSecond'">Купить</button>
+  </div>
+</div>
+
+<footer>
+  &copy; 2023 Крипто Магазин. Все права защищены.
+</footer>
+
+</body>
+</html>
